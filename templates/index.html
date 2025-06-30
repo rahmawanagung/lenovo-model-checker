@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lenovo Model Checker</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+
+  <div class="card">
+    <h1>Lenovo Model Checker</h1>
+    <p>Unggah file Excel (.xlsx) Anda yang berisi kolom "SerialNumber" untuk memeriksa status model laptop secara
+      otomatis.
+    </p>
+
+    <form id="upload-form" method="post" enctype="multipart/form-data">
+      <div class="form-container">
+        <input type="file" name="file" id="file-input" class="file-input" accept=".xlsx" required>
+
+        <label for="file-input" class="file-label">Pilih File Excel</label>
+
+        <div id="file-name">Belum ada file yang dipilih</div>
+      </div>
+
+      <button type="submit" id="submit-btn" class="submit-btn">Upload & Cek Model Laptop</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

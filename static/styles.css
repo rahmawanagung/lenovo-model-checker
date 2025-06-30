@@ -1,0 +1,109 @@
+/* Mengatur dasar halaman */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Desain kartu untuk menampung form */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Judul utama */
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+/* Paragraf deskripsi */
+p {
+  font-size: 16px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+/* Container untuk input file dan tombol */
+.form-container {
+  border: 2px dashed #bdc3c7;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+}
+
+/* Input file yang disembunyikan */
+.file-input {
+  display: none;
+}
+
+/* Label custom untuk input file (terlihat seperti tombol) */
+.file-label {
+  background-color: #ecf0f1;
+  color: #34495e;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.file-label:hover {
+  background-color: #dfe6e9;
+}
+
+/* Teks yang menampilkan nama file yang dipilih */
+#file-name {
+  margin-top: 15px;
+  font-style: italic;
+  color: #3498db;
+}
+
+/* Tombol submit utama */
+.submit-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 30px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Style untuk tombol saat nonaktif (loading) */
+.submit-btn:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
