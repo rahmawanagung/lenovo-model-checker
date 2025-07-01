@@ -2,34 +2,49 @@
 <html lang="id">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lenovo Model Checker</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenovo Model Checker</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 
 <body>
 
-  <div class="card">
-    <h1>Lenovo Model Checker</h1>
-    <p>Unggah file Excel (.xlsx) Anda yang berisi kolom "SerialNumber" untuk memeriksa status model laptop secara
-      otomatis.
-    </p>
+    <div class="header-container">
+        <img src="{{ url_for('static', filename='logo-lenovo.png') }}" alt="Logo Lenovo" class="header-logo">
+        <img src="{{ url_for('static', filename='logo-mtg.jpg') }}" alt="Logo MTG" class="header-logo">
+    </div>
 
-    <form id="upload-form" method="post" enctype="multipart/form-data">
-      <div class="form-container">
-        <input type="file" name="file" id="file-input" class="file-input" accept=".xlsx" required>
+    <div class="main-container">
+        <div class="card">
+            <h1>Lenovo Model Checker</h1>
+            <p>Dapatkan model laptop secara instan berdasarkan nomor seri dari file Excel Anda.</p>
 
-        <label for="file-input" class="file-label">Pilih File Excel</label>
+            <form id="upload-form" method="post" enctype="multipart/form-data">
 
-        <div id="file-name">Belum ada file yang dipilih</div>
-      </div>
+                <label for="file-input" class="form-container">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM14 13V17H10V13H7L12 8L17 13H14Z"
+                            fill="#3498db" />
+                    </svg>
+                    <span id="file-label-text">Klik untuk memilih file atau seret ke sini</span>
+                    <span id="file-name"></span>
+                </label>
 
-      <button type="submit" id="submit-btn" class="submit-btn">Upload & Cek Model Laptop</button>
-    </form>
-  </div>
+                <input type="file" name="file" id="file-input" class="file-input" accept=".xlsx" required>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+                <button type="submit" id="submit-btn" class="submit-btn">Upload & Cek Model</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 
 </html>
