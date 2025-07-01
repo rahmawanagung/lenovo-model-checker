@@ -52,7 +52,7 @@ def upload_file():
             output_path = os.path.join(app.config['UPLOAD_FOLDER'], output_filename)
             
             file.save(input_path)
-
+            
             df_input = pd.read_excel(input_path)
             serial_numbers = df_input['SerialNumber'].tolist()
 
