@@ -66,8 +66,8 @@ python run.py
 ### Dependencies List
 ```plaintext
 - Flask
+- Pandas
 - Requests
-- pythonanywhere.com
 ```
 
 ## 📖 Detailed Documentation
