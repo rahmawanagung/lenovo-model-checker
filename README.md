@@ -1,6 +1,6 @@
 # 🚀 Lenovo Model Checker 🚀
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Lenovo+Model+Checker;A+Cutting-Edge+Project;Dynamically+Check+Model+Specifications&font=Fira+Code&center=true&width=600&height=100&color=F700FF&vCenter=true&size=30)
+![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Lenovo+Model+Checker;A+Cutting-Edge+Project;Dynamically+Check+Model+Specifications&font=Fira+Code&center=true&width=700&height=100&color=F700FF&vCenter=true&size=30)
 
 [![GitHub stars](https://img.shields.io/github/stars/rahmawanagung/lenovo-model-checker?style=flat&logo=github)](https://github.com/rahmawanagung/lenovo-model-checker/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/rahmawanagung/lenovo-model-checker?style=flat&logo=github)](https://github.com/rahmawanagung/lenovo-model-checker/network)
